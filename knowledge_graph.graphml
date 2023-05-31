@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d0" for="edge" attr.name="relation" attr.type="string"/>
+<graph edgedefault="undirected"><node id="38990.0"/>
+<node id="39999.0"/>
+<node id="43990.0"/>
+<node id="41990.0"/>
+<node id="83680.0"/>
+<node id="61000.0"/>
+<node id="27490.0"/>
+<node id="32990.0"/>
+<node id="31999.0"/>
+<node id="4.0 4.0 out of 5 stars&#13;&#10;22 ratings&#13;&#10;4.0 out of 5 stars"/>
+<node id="4.0"/>
+<node id="12"/>
+<node id="nan"/>
+<node id="True"/>
+<node id="T"/>
+<node id="17 May 2023&#10;"/>
+<node id="&#10;Nice product for 39k&#10;"/>
+<node id="3.5 3.5 out of 5 stars&#13;&#10;3 ratings&#13;&#10;3.5 out of 5 stars"/>
+<node id="3.5"/>
+<node id="70"/>
+<node id="nan"/>
+<node id="o"/>
+<node id="28 March 2023&#13;&#10;"/>
+<node id="&#13;&#10;Good Laptop&#13;&#10;"/>
+<node id="3.8 3.8 out of 5 stars&#13;&#10;9 ratings&#13;&#10;3.8 out of 5 stars"/>
+<node id="3.8"/>
+<node id="740"/>
+<node id="nan"/>
+<node id="p"/>
+<node id="13 February 2023&#13;&#10;"/>
+<node id="&#13;&#10;Microsoft office is not getting activated.&#13;&#10;"/>
+<node id="2.9 2.9 out of 5 stars&#13;&#10;5 ratings&#13;&#10;2.9 out of 5 stars"/>
+<node id="2.9"/>
+<node id="329"/>
+<node id="nan"/>
+<node id=" "/>
+<node id="14 March 2023&#13;&#10;"/>
+<node id="&#13;&#10;Student 2021 and office Home preinstalled but not working&#13;&#10;"/>
+<node id="3.8 3.8 out of 5 stars&#13;&#10;24 ratings&#13;&#10;3.8 out of 5 stars"/>
+<node id="1"/>
+<node id="nan"/>
+<node id="r"/>
+<node id="17 May 2022&#13;&#10;"/>
+<node id="&#13;&#10;A well-balanced powerful laptop&#13;&#10;"/>
+<node id="3.9 3.9 out of 5 stars&#13;&#10;48 ratings&#13;&#10;3.9 out of 5 stars"/>
+<node id="3.9"/>
+<node id="nan"/>
+<node id="e"/>
+<node id="4 October 2022&#13;&#10;"/>
+<node id="&#13;&#10;Decent display not IPS panel but overall nice laptop&#13;&#10;"/>
+<node id="3.4 3.4 out of 5 stars&#13;&#10;44 ratings&#13;&#10;3.4 out of 5 stars"/>
+<node id="3.4"/>
+<node id="164"/>
+<node id="nan"/>
+<node id="v"/>
+<node id="15 March 2023&#13;&#10;"/>
+<node id="&#13;&#10;Ok product&#13;&#10;"/>
+<node id="3.9 3.9 out of 5 stars&#13;&#10;8 ratings&#13;&#10;3.9 out of 5 stars"/>
+<node id="nan"/>
+<node id="i"/>
+<node id="20 February 2023&#13;&#10;"/>
+<node id="&#13;&#10;All over ok.. product is good.. smooth working..&#13;&#10;"/>
+<node id="3.5 3.5 out of 5 stars&#13;&#10;47 ratings&#13;&#10;3.5 out of 5 stars"/>
+<node id="nan"/>
+<node id="13 September 2022&#10;"/>
+<node id="&#10;Slow&#10;"/>
+<edge source="38990.0" target="4.0 4.0 out of 5 stars&#13;&#10;22 ratings&#13;&#10;4.0 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="4.0">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="12">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="T">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="17 May 2023&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="38990.0" target="&#10;Nice product for 39k&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="3.5 3.5 out of 5 stars&#13;&#10;3 ratings&#13;&#10;3.5 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="3.5">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="70">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="o">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="28 March 2023&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="39999.0" target="&#13;&#10;Good Laptop&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="3.8 3.8 out of 5 stars&#13;&#10;9 ratings&#13;&#10;3.8 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="3.8">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="740">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="p">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="13 February 2023&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="43990.0" target="&#13;&#10;Microsoft office is not getting activated.&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="2.9 2.9 out of 5 stars&#13;&#10;5 ratings&#13;&#10;2.9 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="2.9">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="329">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target=" ">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="14 March 2023&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="41990.0" target="&#13;&#10;Student 2021 and office Home preinstalled but not working&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="3.8 3.8 out of 5 stars&#13;&#10;24 ratings&#13;&#10;3.8 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="3.8">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="1">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="r">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="17 May 2022&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="83680.0" target="&#13;&#10;A well-balanced powerful laptop&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="3.9 3.9 out of 5 stars&#13;&#10;48 ratings&#13;&#10;3.9 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="3.9">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="1">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="e">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="4 October 2022&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="61000.0" target="&#13;&#10;Decent display not IPS panel but overall nice laptop&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="3.4 3.4 out of 5 stars&#13;&#10;44 ratings&#13;&#10;3.4 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="3.4">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="164">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="v">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="15 March 2023&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="27490.0" target="&#13;&#10;Ok product&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="3.9 3.9 out of 5 stars&#13;&#10;8 ratings&#13;&#10;3.9 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="3.9">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="1">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="i">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="20 February 2023&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="32990.0" target="&#13;&#10;All over ok.. product is good.. smooth working..&#13;&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="3.5 3.5 out of 5 stars&#13;&#10;47 ratings&#13;&#10;3.5 out of 5 stars">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="3.5">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="1">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="nan">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="True">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="e">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="13 September 2022&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+<edge source="31999.0" target="&#10;Slow&#10;">
+  <data key="d0">sentiment</data>
+</edge>
+</graph></graphml>
