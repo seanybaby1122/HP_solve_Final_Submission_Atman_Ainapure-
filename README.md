@@ -10,3 +10,10 @@ cleaned_final_output.xlsx is final output on which I made the knowledge graph.
 knowledge_graph.graphml is the knowledge graph.
 
 links_printer_laptop.xlsx is the excel file in which all the web scraped links are stored.
+
+Power Automate workflows pdf file contains the workflows which I used for web scraping.
+
+
+Tech Stack Used:
+No code solution for webscraping
+Python for data cleaning, sentiment analysis and creation of knowledge graph.
