@@ -1,0 +1,106 @@
+import unittest
+from flask import Flask
+from flask_socketio import SocketIO
+
+class OutcomeExpectancySystem:
+    def __init__(self):
+        self.data = {}
+
+    def add_acronym_data(self, acronym, topic, predicted_outcome, confidence):
+        if not acronym:
+            raise ValueError("Acronym cannot be empty")
+        self.data[acronym] = {
+            "topic": topic,
+            "predicted_outcome": predicted_outcome,
+            "confidence": confidence,
+            "actual_outcome": None
+        }
+
+    def update_outcome(self, acronym, actual_outcome, confidence):
+        if acronym in self.data:
+            self.data[acronym]["actual_outcome"] = actual_outcome
+            self.data[acronym]["confidence"] = confidence
+        else:
+            raise KeyError(f"Acronym '{acronym}' not found.")
+
+    def get_prediction(self, acronym):
+        if acronym in self.data:
+            return self.data[acronym]["predicted_outcome"], self.data[acronym]["confidence"]
+        else:
+            return None, None
+
+    def calculate_accuracy(self, predicted, actual):
+        if predicted == actual:
+            return 1.0
+        elif predicted and actual:
+            words_predicted = set(predicted.split())
+            words_actual = set(actual.split())
+            common_words = words_predicted.intersection(words_actual)
+            return len(common_words) / max(len(words_predicted), len(words_actual))
+        else:
+            return 0.0
+
+# Flask setup for real-time updates
+app = Flask(__name__)
+socketio = SocketIO(app)
+system = OutcomeExpectancySystem()
+
+@socketio.on('add_acronym')
+def handle_add_acronym(data):
+    try:
+        system.add_acronym_data(data['acronym'], data['topic'], data['predicted_outcome'], data['confidence'])
+        socketio.emit('acronym_added', {
+            'acronym': data['acronym'],
+            'predicted_outcome': data['predicted_outcome']
+        })
+    except ValueError as e:
+        print(f"Error adding acronym: {e}")
+
+@socketio.on('update_outcome')
+def handle_update_outcome(data):
+    try:
+        system.update_outcome(data['acronym'], data['actual_outcome'], data['confidence'])
+        socketio.emit('outcome_updated', {
+            'acronym': data['acronym'],
+            'actual_outcome': data['actual_outcome']
+        })
+    except KeyError as e:
+        print(f"Error updating outcome: {e}")
+
+class TestOutcomeExpectancySystem(unittest.TestCase):
+    def setUp(self):
+        self.system = OutcomeExpectancySystem()
+
+    def test_add_acronym_data(self):
+        self.system.add_acronym_data("E6", "Energy", "Increase in renewable energy adoption", 0.85)
+        self.assertEqual(self.system.data["E6"]["topic"], "Energy")
+        self.assertEqual(self.system.data["E6"]["predicted_outcome"], "Increase in renewable energy adoption")
+        self.assertEqual(self.system.data["E6"]["confidence"], 0.85)
+
+    def test_update_outcome(self):
+        self.system.add_acronym_data("E6", "Energy", "Increase in renewable energy adoption", 0.85)
+        self.system.update_outcome("E6", "Increase in solar energy adoption", 0.90)
+        self.assertEqual(self.system.data["E6"]["actual_outcome"], "Increase in solar energy adoption")
+        self.assertEqual(self.system.data["E6"]["confidence"], 0.90)
+
+    def test_get_prediction(self):
+        self.system.add_acronym_data("E6", "Energy", "Increase in renewable energy adoption", 0.85)
+        prediction, confidence = self.system.get_prediction("E6")
+        self.assertEqual(prediction, "Increase in renewable energy adoption")
+        self.assertEqual(confidence, 0.85)
+
+    def test_calculate_accuracy(self):
+        self.assertEqual(self.system.calculate_accuracy("Increase in renewable energy adoption", "Increase in renewable energy adoption"), 1.0)
+        self.assertEqual(self.system.calculate_accuracy("Increase in renewable energy adoption", "Increase in solar energy adoption"), 0.8)
+        self.assertEqual(self.system.calculate_accuracy("Increase in renewable energy adoption", "Decrease in renewable energy adoption"), 0.5)
+
+    def test_invalid_acronym_data(self):
+        with self.assertRaises(ValueError):
+            self.system.add_acronym_data("", "Energy", "Increase in renewable energy adoption", 0.85)
+
+if __name__ == '__main__':
+    #unittest.main() # Uncomment to run tests only.
+    socketio.run(app, debug=True) # Comment out if running test only
+pip install Flask Flask-SocketIO
+python app.py
+
